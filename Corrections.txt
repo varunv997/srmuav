@@ -1,0 +1,30 @@
+Remove "part" in research
+INDIGENOUS
+
+DYNAMIC object tracking: remove "military" instead "can prove to be vital in a host of applications like WC, traffic minitoring, etc"
+
+Self healing compsite: "cast:
+
+About us: remove" we were..drdo...49grams..."
+Make another small section "Our Achievements:
+
+Remove "the applications include: intead "Our focus on applications :
+...
+...
+...
+...
+...
+..."
+
+DABANG:
+" Dabang is long range, high endurance uav with high payload capacity. it was customised for SUAS 2015, to suit the specific mission requirements. Its a twin tail-boom Pusher coniguration, conventional tricycle landing gear aircraft."
+Specification:
+"Autopilot: 3DRobotics Pixhawk
+Wingspan: 3m, Overall length:----
+Powerpalnt: 30cc gasoline engine
+Endurance: 120 minutes
+Payload options:ElectroOptic camera, FLIR, Communications hub"
+Appliactions:
+Long range aerial photography/surveillance, package delivery, Remote information centre
+
+ 

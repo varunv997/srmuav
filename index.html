@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+	<link href="themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
+	<script src="themes/1/js-image-slider.js" type="text/javascript"></script>
+
+   <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jssor.slider-21.1.5.mini.js"></script>
+
+
+     <script>
+        jQuery(document).ready(function ($) {
+            
+            var jssor_1_SlideoTransitions = [
+              [{b:-1,d:1,o:-1},{b:0,d:1000,o:1}],
+              [{b:1900,d:2000,x:-379,e:{x:7}}],
+              [{b:1900,d:2000,x:-379,e:{x:7}}],
+              [{b:-1,d:1,o:-1,r:288,sX:9,sY:9},{b:1000,d:900,x:-1400,y:-660,o:1,r:-288,sX:-9,sY:-9,e:{r:6}},{b:1900,d:1600,x:-200,o:-1,e:{x:16}}]
+            ];
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+
+<style>
+        
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('img/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+        .jssora22l { background-position: -10px -31px; }
+        .jssora22r { background-position: -70px -31px; }
+        .jssora22l:hover { background-position: -130px -31px; }
+        .jssora22r:hover { background-position: -190px -31px; }
+        .jssora22l.jssora22ldn { background-position: -250px -31px; }
+        .jssora22r.jssora22rdn { background-position: -310px -31px; }
+    </style>
+
+
+
+   <!--- Basic Page Needs
+   ================================================== -->
+	<meta charset="utf-8">
+	<title>SRM UAV</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
+
+
+
+
+
+<style>
+img.old {
+    
+	
+    -webkit-filter: grayscale(100%);
+filter: grayscale(100%); /* For IE8 and earlier */
+}
+
+img.old:hover {
+    opacity: 1.0;
+-webkit-filter: grayscale(0%);
+filter: grayscale(0%);
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+img.new {
+    
+	
+   opacity: 0.95
+}
+
+img.new:hover {
+    opacity: 1.0;
+
+}
+
+
+	
+
+
+
+
+
+</style>
+
+
+
+</head>
+
+<body data-spy="scroll" data-target="#nav-wrap">
+
+
+   <!-- Header
+   ================================================== -->
+<section id="home">
+    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 650px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 684px; overflow: hidden;">
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="img/4.jpg" />
+                
+               
+                <div data-u="caption" data-t="0" style="position: absolute; top: 120px; left: 650px; width: 470px; height: 220px;">
+                    
+                    <div style="position: absolute; top: 4px; left: 45px; width: 379px; height: 213px; overflow: hidden;">
+                        
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="img/5.jpg" />
+            </div>
+            <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src="img/6.jpg" />
+            </div>
+            <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src="img/7.jpg" />
+            </div>
+            
+        
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
+    </div>
+
+    </section>
+
+   <header class="mobile">
+
+      <div class="row">
+
+         <div class="col full">
+
+            <div class="logo">
+               <a href="#"><img alt="" src="images/srmuav-logo.png" width="70%"></a>
+            </div>
+
+            <nav id="nav-wrap">
+
+               <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+               <ul id="nav" class="nav">
+	               <li><a href="#home">Home</a></li>
+			<li><a href="#about">About Us</a></li>
+	               <li><a href="#services">Research</a></li>
+	               <li><a href="#portfolio">UAVs</a></li>
+	               <li><a href="#journal">Gallery</a></li>
+                  
+                  <li><a href="#contact">Contact</a></li>
+               </ul>
+
+            </nav>
+
+         </div>
+
+      </div>
+
+   </header> <!-- Header End -->
+
+
+
+
+
+<!--<section id ="home">
+
+	
+<img src="images/cover.jpg" class="cover" width=100%></a>
+
+</section> -->
+
+
+
+
+ <!-- About Section
+   ================================================== -->
+
+      <section id="about">
+
+      <div class="row section-head">
+
+         <div class="col one-fourth">
+            <h2>About Us</h2>
+            <p class="desc">This is who we are.</p>
+         </div>
+
+         <div class="col three-fourths">
+             <p class="intro">The team was established in August 2013 by Dr. Narayana Rao, Director (Research) with support from Dr. C. Muthamizhchelvan, Director (E&T) under the guidance of Prof. G. Mahendra Perumal of Department of Aerospace Engineering. The team was initially headed by Mr. Sobin Santhosh, class of 2015, B.Tech(Aerospace).</p>
+             <br/>
+
+             <table>
+             <tr><td><div class="imgWrap">
+  <img src="images/dir.jpg" width = "300" class="new" />
+  <p><b><font color="black">Dr. Muthamizhchelvan</b><br/>Director of E&T</font></p>
+
+</div></td><td><p>&nbsp&nbsp&nbsp</p></td><td><div class="imgWrap">
+  <img src="images/mah.jpg" width="300" class="new" />
+  <p><b><font color = "black">Mahendra Perumal</b><br/>Faculty Advisor, SRM-UAV</font></b></p>
+  
+</div></td></tr>
+             </table>
+<br/>
+<p class="intro">The team researches and develops end to end solutions to real civilian and military problems which can be solved using unmanned aerial systems. </p>
+
+<!--Achievements -->
+
+
+<p class="intro">The Applications Include : </p>
+         </div>
+
+      </div>
+
+     
+
+      <div class="row process-wrap">
+<center>
+         
+            <h4>Search and Rescue</h4>
+
+           
+         
+            <h4>Wind-turbine blade inspection</h4>
+
+            
+      
+
+       
+            <h4>Building and Industrial inspection</h4>
+
+           
+      
+
+         
+            <h4>Event Photography</h4>
+
+        
+            <h4>Disaster Management</h4>
+
+           
+      
+         
+            <h4>Power and Pipeline Monitoring</h4>
+
+           
+     
+            <h4>Surveillance</h4>
+
+           
+      
+         
+            <h4>Wildlife Preservation</h4>
+
+           
+      
+         
+            <h4>Traffic Monitoring</h4>
+
+</center>
+
+
+           
+      </div>
+
+      </div> <!-- Process Wrap End --> <!--Here THE ACHIEVEMEST START-->
+   <section id="about">
+
+      <div class="row section-head">
+
+         <div class="col one-fourth">
+            <h2>Achievements</h2>
+            <p class="desc">Our Profile</p>
+         </div>
+
+         <div class="col three-fourths">
+             <p class="intro">We got the opportunity to present our research to <b>Mr. Avinash Chander</b>, the then <b>Director General, DRDO</b> who was extremely inspired by our work and also gave us a project which we are currently working on.</p>
+
+             <p class="intro"><b>Savior UAV</b> was shortlisted for the <b>European Satellite Navigation Competition 2013.</b></p>
+
+<p class="intro">We secured the <b>First Position</b> in Lighter than Air Vehicle Challenge Student Design Competition organized by <b>American Society of Mechanical Engineers</b> held at BITS, Pilani.</p>
+
+<p class="intro">We have showcased our projects at the <b>Second Unmanned Systems Conference and Exhibition - 2014</b> held at New Delhi.</p>
+
+<p class="intro">We were the only student team at <b>India Aviation Expo 2013 and 2016</b>, Hyderabad and were greatly appreciated by the delegates.</b></font></p>
+
+<p class="intro"><b>National Aerospace Laboratories</b>, Bangalore has shown keen interest in two of our projects.</p>
+
+<p class="intro">Our research has been printed in <b>The New Indian Express, Deccan Chronicle, Shanghai Express, Career 360</b> etc.</p>
+
+<p class="intro">Our projects have been covered by <b>Vasanth TV</b>, a TV Channel.</p>
+
+<p class="intro">We had exhibited our UAVs at <b>Maker Fest 2015</b>, held in Ahmedabad in January 2015.</p>
+
+<p class="intro">Secured world rank 38 in <b>Students Unmanned Aerial Systems (SUAS)</b> Competition, held in Maryland, USA in June 2015.</p>
+
+<p class="intro">Showcased our UAVs to <b>Mr. Ratan Tata</b>, Chairman Emeritus of TATA Sons, who was highly impressed with our on-going projects.</p>
+
+
+
+
+
+<!--Achievements -->
+
+
+         </div>
+
+      </div>
+
+     
+
+      
+
+      </div> <!-- Process Wrap End -->
+
+
+       <div class="row">
+    <div class="col full">
+      <h3>The Current Team</h3>
+    </div>
+  </div>
+  <div class="row team-wrap">
+    <div class="col one-fourth"> <img src="images/team/1.jpg" width="300" height = "300" class="new" alt="">
+      <div class"member-name">
+        <h5>Bharat Mathur</h5>
+        <span>Team Leader</span> </div>
+      <ul class="member-social">
+        <li><a href="https://www.facebook.com/bharat.mathur"><i class="icon-facebook"></i></a></li>
+     
+    </div>
+  
+    <div class="col one-fourth"> <img src="images/team/3.jpg" width = "300" class="new" alt="">
+      <div class"member-name">
+        <h5>Abhishek Mohanty</h5>
+        <span>Asst. Team Leader</span> </div>
+      <ul class="member-social">
+        <li><a href="https://www.facebook.com/abhishek.mohanty.142"><i class="icon-facebook"></i></a></li>
+       
+      </ul>
+    </div>
+    <div class="col one-fourth"> <img src="images/team/4.jpg" class="new" width="300" alt="">
+      <div class"member-name">
+        <h5>Arnab Halder</h5>
+        <span>Team Manager, Chief Test Pilot</span> </div>
+      <ul class="member-social">
+        <li><a href="https://www.facebook.com/arnab.halder.583"><i class="icon-facebook"></i></a></li>
+       
+      </ul>
+    </div>
+
+    <div class="col one-fourth"> <img src="images/team/5.jpg" class="new" width="300" alt="">
+      <div class"member-name">
+        <h5>Deeptaman Das</h5>
+        <span>Embedded Systems Head</span> </div>
+      <ul class="member-social">
+        <li><a href="https://www.facebook.com/deeptaman.das"><i class="icon-facebook"></i></a></li>
+      
+      </ul>
+    </div>
+
+ 
+
+
+
+  
+
+
+
+ 
+
+
+
+
+ 
+
+    <div class="col one-fourth"> <img src="images/team/14.jpg" class="new" width="300" alt="">
+      <div class"member-name">
+        <h5>Indhu Krishnan</h5>
+        <span>Control & Power Systems Engineer</span> </div>
+      <ul class="member-social">
+        <li><a href="#"><i class="icon-facebook"></i></a></li>
+       
+      </ul>
+    </div>
+
+
+
+ 
+
+    <div class="col one-fourth"> <img src="images/team/16.jpg" class="new" width="300" alt="">
+      <div class"member-name">
+        <h5>Qasim Pardawala</h5>
+        <span>Embedded Systems Engineer</span> </div>
+      <ul class="member-social">
+        <li><a href="https://www.facebook.com/qasim.pardawala"><i class="icon-facebook"></i></a></li>
+       
+      </ul>
+    </div>
+
+
+
+ 
+
+    <div class="col one-fourth"> <img src="images/team/15.jpg" class="new" width="300" alt="">
+      <div class"member-name">
+        <h5>Anshul Tayal</h5>
+        <span>Control Systems Engineer</span> </div>
+      <ul class="member-social">
+        <li><a href="https://www.facebook.com/anshul.tayal2"><i class="icon-facebook"></i></a></li>
+       
+      </ul>
+    </div>
+
+
+
+
+        <div class="col one-fourth"> <img src="images/team/22.jpg" class="new" width="300" alt="">
+      <div class"member-name">
+        <h5>Anand Singhal</h5>
+        <span>Image Processing</span> </div>
+      <ul class="member-social">
+        <li><a href="#"><i class="icon-facebook"></i></a></li>
+       
+      </ul>
+    </div>
+
+
+    <div class="col one-fourth"> <img src="images/team/23.jpg" class="new" width="300" alt="">
+      <div class"member-name">
+        <h5>Anant Shukla</h5>
+        <span>Software</span> </div>
+      <ul class="member-social">
+        <li><a href="#"><i class="icon-facebook"></i></a></li>
+       
+      </ul>
+    </div>
+
+
+    <div class="col one-fourth"> <img src="images/team/24.jpg" class="new" width="300" alt="">
+      <div class"member-name">
+        <h5>Arnab Ghose</h5>
+        <span>Autopilot</span> </div>
+      <ul class="member-social">
+        <li><a href="#"><i class="icon-facebook"></i></a></li>
+       
+      </ul>
+    </div>
+
+        <div class="col one-fourth"> <img src="images/team/25.jpg" class="new" width="300" alt="">
+      <div class"member-name">
+        <h5>Karan Dholkariya</h5>
+        <span>Design</span> </div>
+      <ul class="member-social">
+        <li><a href="#"><i class="icon-facebook"></i></a></li>
+       
+      </ul>
+    </div>
+
+        <div class="col one-fourth"> <img src="images/team/26.jpg" class="new" width="300" alt="">
+      <div class"member-name">
+        <h5>Paritosh Sapre</h5>
+        <span>Image Processing</span> </div>
+      <ul class="member-social">
+        <li><a href="#"><i class="icon-facebook"></i></a></li>
+       
+      </ul>
+    </div>
+
+        <div class="col one-fourth"> <img src="images/team/27.jpg" class="new" width="300" alt="">
+      <div class"member-name">
+        <h5>Prerana Roy</h5>
+        <span>Communication Systems</span> </div>
+      <ul class="member-social">
+        <li><a href="#"><i class="icon-facebook"></i></a></li>
+       
+      </ul>
+    </div>
+
+        <div class="col one-fourth"> <img src="images/team/28.jpg" class="new" width="300" alt="">
+      <div class"member-name">
+        <h5>Risshi Jain</h5>
+        <span>Design</span> </div>
+      <ul class="member-social">
+        <li><a href="#"><i class="icon-facebook"></i></a></li>
+       
+      </ul>
+    </div>
+
+        <div class="col one-fourth"> <img src="images/team/29.jpg" class="new" width="300" alt="">
+      <div class"member-name">
+        <h5>Sanchayan Sarkar</h5>
+        <span>Software</span> </div>
+      <ul class="member-social">
+        <li><a href="#"><i class="icon-facebook"></i></a></li>
+       
+      </ul>
+    </div>
+
+        <div class="col one-fourth"> <img src="images/team/30.jpg" class="new" width="300" alt="">
+      <div class"member-name">
+        <h5>Sravanthi Reddy</h5>
+        <span>Embedded Systems</span> </div>
+      <ul class="member-social">
+        <li><a href="#"><i class="icon-facebook"></i></a></li>
+       
+      </ul>
+    </div>
+
+        <div class="col one-fourth"> <img src="images/team/31.jpg" class="new" width="300" alt="">
+      <div class"member-name">
+        <h5>Tathagat Sarangi</h5>
+        <span>Design</span> </div>
+      <ul class="member-social">
+        <li><a href="#"><i class="icon-facebook"></i></a></li>
+       
+      </ul>
+    </div>
+
+        <div class="col one-fourth"> <img src="images/team/32.jpg" class="new" width="300" alt="">
+      <div class"member-name">
+        <h5>Koustav Paul</h5>
+        <span>Design</span> </div>
+      <ul class="member-social">
+        <li><a href="#"><i class="icon-facebook"></i></a></li>
+       
+      </ul>
+    </div>
+
+        <div class="col one-fourth"> <img src="images/team/33.jpg" class="new" width="300" alt="">
+      <div class"member-name">
+        <h5>Utkarsh Bajpai</h5>
+        <span>Autopilot</span> </div>
+      <ul class="member-social">
+        <li><a href="#"><i class="icon-facebook"></i></a></li>
+       
+      </ul>
+    </div>
+
+
+        <div class="col one-fourth"> <img src="images/team/43.jpg" class="new" width="300" alt="">
+      <div class"member-name">
+        <h5>Vivek Sehgal</h5>
+        <span>Structures</span> </div>
+      <ul class="member-social">
+        <li><a href="#"><i class="icon-facebook"></i></a></li>
+       
+      </ul>
+    </div>    
+
+     <div class="col one-fourth"> <img src="images/team/44.jpg" class="new" width="300" alt="">
+      <div class"member-name">
+        <h5>Vipul Notani</h5>
+        <span>Communication Systems</span> </div>
+      <ul class="member-social">
+        <li><a href="#"><i class="icon-facebook"></i></a></li>
+       
+      </ul>
+    </div>   
+
+     <div class="col one-fourth"> <img src="images/team/45.jpg" class="new" width="300" alt="">
+      <div class"member-name">
+        <h5>Sayantan Saha</h5>
+        <span>Design</span> </div>
+      <ul class="member-social">
+        <li><a href="#"><i class="icon-facebook"></i></a></li>
+       
+      </ul>
+    </div>   
+
+     <div class="col one-fourth"> <img src="images/team/46.jpg" class="new" width="300" alt="">
+      <div class"member-name">
+        <h5>Sambit Supriya Dash</h5>
+        <span>Design</span> </div>
+      <ul class="member-social">
+        <li><a href="#"><i class="icon-facebook"></i></a></li>
+       
+      </ul>
+    </div>   
+
+  
+
+     <div class="col one-fourth"> <img src="images/team/48.jpg" class="new" width="300" alt="">
+      <div class"member-name">
+        <h5>Rishav</h5>
+        <span>Structures</span> </div>
+      <ul class="member-social">
+        <li><a href="#"><i class="icon-facebook"></i></a></li>
+       
+      </ul>
+    </div>   
+
+  
+
+
+
+<!-- Hall of fame -->
+   
+
+
+    
+  </div>
+
+       <div class="row">
+    <div class="col full">
+      <h3>Hall of Fame</h3>
+      <span><b>Our Mentors</b></span>
+    </div>
+  </div>
+  <br/><br/>
+
+<div class="row team-wrap">
+ 
+
+
+  
+    <div class="col one-fourth"> <img src="images/team/34.jpg" class="old" width="300" alt="">
+      <div class"member-name">
+        <h5>Sobin Santhosh</h5>
+         </div>
+      
+     
+    </div>
+    <div class="col one-fourth"> <img src="images/team/35.jpg"  class="old" width="300" alt="">
+      <div class"member-name">
+        <h5>Shubham Vyas</h5>
+        </div>
+      
+    </div>
+
+    <div class="col one-fourth"> <img src="images/team/37.jpg" class="old" width="300" alt="">
+      <div class"member-name">
+        <h5>Gaurang Vashistha</h5>
+        </div>
+      
+    </div>
+
+    <div class="col one-fourth"> <img src="images/team/38.jpg" class="old" width="300" alt="">
+      <div class"member-name">
+        <h5>Vishnu Sen</h5>
+       </div>
+      
+    </div>
+
+ 
+
+
+
+
+    <div class="col one-fourth"> <img src="images/team/39.jpg"  class="old" width="300" alt="">
+      <div class"member-name">
+        <h5>Vijaysai Kandimalla</h5>
+        </div>
+      
+    </div>
+	
+
+
+
+ 
+
+
+
+
+ 
+
+    <div class="col one-fourth"> <img src="images/team/40.jpg" class="old" width="300" alt="">
+      <div class"member-name">
+        <h5>Abdullah Ccop</h5>
+        </div>
+     
+    </div>
+
+
+
+ 
+
+    <div class="col one-fourth"> <img src="images/team/41.jpg" class="old" width="300" alt="">
+      <div class"member-name">
+        <h5>Pradeep Chand</h5>
+       </div>
+      
+    </div>
+
+
+
+ 
+
+    <div class="col one-fourth"> <img src="images/team/42.jpg" class="old" width="300" alt="">
+      <div class"member-name">
+        <h5>Manogna Reddy</h5>
+       </div>
+      
+    </div>
+
+     <div class="col one-fourth"> <img src="images/team/2.jpg" width ="300"  class="old" alt="">
+      <div class"member-name">
+        <h5>Shreyas Vasudevan</h5>
+        </div>
+      
+    </div>
+
+
+
+
+    
+
+
+
+
+
+   
+
+
+    
+  </div>
+     
+
+
+   </section> <!-- About Section End-->
+
+
+
+
+   <!-- Services Section
+   ================================================== -->
+   <section id="services">
+
+      <div class="row section-head">
+
+         <div class="col one-third">
+            <h2>Research</h2>
+            <p class="desc"><font color = "white"></font></p>
+         </div>
+
+         <div class="col two-thirds">
+            <div class="intro">
+             <p><font color = "white">This is a team that focuses more on its R&D for better and efficient flying and at the same time keeps the basic purpose in mind.</font></p>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="row">
+
+         <div class="services-wrapper">
+
+            <div class="col">
+               <h2><i class="icon-desktop"></i>Obstacle Avoidance</h2>
+               <p><br/><font color = "white">In order to make UAVs smarter and be able to operate in constrained environments, they need to be able to sense their surroundings. To achieve this, obstacle avoidance is incorporated on a rotary wing UAV so that it can steer away from any dynamic or static objects while flying in a complex environment.</font></p>            </div>
+
+            <div class="col">
+               <h2><i class="icon-star"></i>Dynamic Object Tracking</h2>
+               <p><font color = "white">This technology makes use of a thermal or electro-optical camera which enables the UAV to view and follow moving objects on the ground.This technology can prove to be vital in a host of applications like Wildlife Conservation, traffic minitoring, etc. The UAV will track an object and fly in such a way so as to maintain the object in the center of the frame.</font></p>
+            </div>
+
+            <div class="col m-first">
+               <h2><i class="icon-camera"></i>Indigenous Autopilot System</h2>
+               <p><font color = "white">An autopilot system is the brain of the UAV during its autonomous operation. Currently most autopilots are developed overseas and purchased off the shelf. We are developing our very own autopilot system from scratch on Arduino platform.</font></p>
+            </div>
+
+            <div class="col first">
+               <h2><i class="icon-globe"></i>Folding Wing UAV</h2><br/>
+               <p><font color = "white">Folding wings in a UAV can reduce the volume occupied by it when it is on ground. This would be useful where space is a major constraint. It can even be fit into a small barrel.</font></p>
+            </div>
+
+            <div class="col m-first">
+               <h2><i class=" icon-list-alt"></i>Self Healing Composites</h2><br/>
+               <p><font color = "white">Composites are cast with a special type of resin, which covers up cracks that are developed on the surface of the material. These materials shall be very useful to increase mean operational time of the UAV and decrease the mean maintanence time.</font></p>
+            </div>
+
+            <div class="col">
+               <h2><i class="icon-print"></i>Automated Engine Restart</h2>
+               <p><font color = "white">Fixed wing UAVs with an internal combustion have the capability to carry higher payload and have a higher endurance than its battery- operated counterparts. If an engine stops in-flight, it can lead to a crash. We are currently working on an automated engine restart system which can also be used to charge the on-board batteries and power the auxiliary systems.</font></p>
+            </div>
+
+         </div> <!-- Services-Wrapper End -->
+
+      </div> <!--end row -->
+
+   </section> <!-- Services Section End -->
+
+
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row section-head">
+         <div class="col full">
+
+            <h2>UAVs</h2>
+            <p class="desc">Check out our latest projects.</p>
+
+            <p class="intro">The team has been working on several projects recently.
+            </p>
+
+         </div>
+      </div>
+
+      <div class="row">
+
+		   <!-- Portfolio Wrapper -->
+		   <div id="portfolio-wrapper">
+
+			   <div class="col portfolio-item">
+               <div class="item-wrap">
+					   <a href="#" data-reveal-id="modal-01"><img src="images/salus.jpg" alt=""/></a>
+					   <div class="portfolio-item-meta">
+						   <h5><a href="#" data-reveal-id="modal-01">SALUS</a></h5>
+					   </div>
+               </div>
+			   </div>
+
+            <div class="col portfolio-item">
+               <div class="item-wrap">
+					   <a href="#" data-reveal-id="modal-02"><img src="images/aeolus.jpg" alt=""/></a>
+					   <div class="portfolio-item-meta">
+						   <h5><a href="#" data-reveal-id="modal-02">AEOLUS</a></h5>
+					   </div>
+               </div>
+			   </div>
+
+            <div class="col portfolio-item">
+               <div class="item-wrap">
+					   <a href="#" data-reveal-id="modal-03"><img src="images/microcopter.jpg" alt=""/></a>
+					   <div class="portfolio-item-meta">
+						   <h5><a href="#" data-reveal-id="modal-03">MICROCOPTER</a></h5>
+					   </div>
+               </div>
+			   </div>
+
+            <div class="col portfolio-item">
+               <div class="item-wrap">
+					   <a href="#" data-reveal-id="modal-04"><img src="images/x-2.jpg" alt=""/></a>
+					   <div class="portfolio-item-meta">
+						   <h5><a href="#" data-reveal-id="modal-04">X-2</a></h5>
+					   </div>
+               </div>
+			   </div>
+
+      
+
+
+            <div class="col portfolio-item">
+               <div class="item-wrap">
+					   <a href="#" data-reveal-id="modal-05"><img src="images/dbang.jpg" alt=""/></a>
+					   <div class="portfolio-item-meta">
+						   <h5><a href="#" data-reveal-id="modal-05">DABANG</a></h5>
+					   </div>
+               </div>
+			   </div>
+
+            
+
+           
+            
+		   </div> <!-- Portfolio Wrapper End -->
+
+
+		</div> <!-- End Row -->
+
+
+      <!-- Modal Popup
+	   =========================================================== -->
+<!-- modal-01 -->
+	   <div id="modal-01" class="reveal-modal">
+
+		   <img class="scale-with-grid" src="images/salus.jpg" alt="" />
+
+		   <div class="description-box">
+			   <h4>SALUS</h4>
+			   <h3>About</h3>
+			   <p>SALUS is a Face Recognition UAV. It is a Quadcopter equippedwith a digital camera for face recognition capability. It was primarily designed for use in search and rescue operations to trace and individual and relay their location to the authorities.</p>
+			   <h3>Specifications</h3>
+			   <p>Payload: Sony Cybershot W810 20.1 MP Digital Camera,
+Endurance: 35 – 45 minutes,
+Fully Autonomous</p>
+
+			   <h3>Applications</h3>
+			   <p>Onboard facial recognition and image processing, 
+Gesture Recognition</p>
+
+            <span class="categories"><i class="icon-tag"></i>Branding, Web Design</span>
+		   </div>
+
+         <div class="link-box">
+          
+		      <a class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div><!-- modal-01 End -->
+
+<!-- modal-02 -->
+	   <div id="modal-02" class="reveal-modal">
+
+		   <img class="scale-with-grid" src="images/aeolus.jpg" alt="" />
+
+		   <div class="description-box">
+			   <h4>AEOLUS</h4>
+			   <h3>About</h3>
+			   <p>AEOLUS is a windmill inspection UAV. It is equipped with a DSLR camera mounted on an image stabilization system. The copter is capable of taking high resolution, distortion free images of the surface of windmill blades which reduces the cost, time and risk of life involved in the inspection of wind turbine blades.</p>
+			   <h3>Specifications</h3>
+			   <p>Payload: CANON 70D DSLR Camera, SONY 1/3 inch CCD Camera, Endurance: 35 – 40 minutes, Autopilot Processor: 32-bit ARM Cortex M4, Fully Autonomous</p>
+
+			   <h3>Applications</h3>
+			   <p>High Resolution Aerial Photography, Film Photography, Package Delivery</p>
+
+            <span class="categories"><i class="icon-tag"></i>Branding, Web Design</span>
+		   </div>
+
+         <div class="link-box">
+            
+		      <a class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div><!-- modal-02 End -->
+
+<!-- modal-03 -->
+	   <div id="modal-03" class="reveal-modal">
+
+		   <img class="scale-with-grid" src="images/microcopter.jpg" alt="" />
+
+		   <div class="description-box">
+			   <h4>MICROCOPTER</h4>
+			   <h3>About</h3>
+			   <p>SRM-UAV Micro-Copter is a palm sized UAV for indoor surveillance. It is specifically designed for rreconnaissance operations . It is equipped with a FPV camera for live video feed to ground station. The drone is extremely silent and small in size. It would complete the mission even before it gets identified.</p>
+			   <h3>Specifications</h3>
+			   <p>Payload: Micro CCD FPV CAMERA, Weight: 200gms, Endurance: 25 mins, Fully Autonomous/ Manual (depending upon application)</p>
+
+			   <h3>Applications</h3>
+			   <p>This palm-sized quad copter can be used for both indoor and outdoor reconnaissance and in stealth operations.
+Its small radar cross section and low noise makes it virtually invisible enemy radar.
+Size 6”x6”x4”</p>
+
+            <span class="categories"><i class="icon-tag"></i>Branding, Web Design</span>
+		   </div>
+
+         <div class="link-box">
+            
+		      <a class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div><!-- modal-03 End -->
+
+<!-- modal-04 -->
+	   <div id="modal-04" class="reveal-modal">
+
+		   <img class="scale-with-grid" src="images/x-2.jpg" alt="" />
+
+		   <div class="description-box">
+			   <h4>X-2</h4>
+			   <h3>About</h3>
+			   <p>X-2 is a hybrid UAV which combines the advantages of a multi-rotor and a fixed wing aircraft. It is capable of taking-off and landing from almost any location without the need of a runway.</p>
+			   <h3>Specifications</h3>
+			   <p>Endurance: 45-65 minutes, Autopilot Processor : Amtel's ATMEGA 2560, Fully Autonomous, Variable Payload Options</p>
+
+			   <h3>Applications</h3>
+			   <p>Aerial Photography, Package Delivery, Wildlife Surveillance</p>
+
+            <span class="categories"><i class="icon-tag"></i>Branding, Web Design</span>
+		   </div>
+
+         <div class="link-box">
+            
+		      <a class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div><!-- modal-04 End -->
+
+<!-- modal-05 -->
+	   <div id="modal-05" class="reveal-modal">
+
+		   <img class="scale-with-grid" src="images/dbang.jpg" alt="" />
+
+		   <div class="description-box">
+			   <h4>DABANG</h4>
+			   <h3>About</h3>
+			   <p>Dabang is long range, high endurance UAV with high payload capacity. It was  customised for SUAS 2015, to suit the specific mission requirements. It's a twin tail-boom Pusher Coniguration, conventional tricycle landing gear aircraft.</p>
+			   <h3>Specifications</h3>
+			   <p>Autopilot: 3DRobotics Pixhawk</p>
+			   <p>Wingspan: 3m, Overall length: 2m</p>
+
+	  		   <p>Endurance: 2.5 to 6 Hours</p>
+			   <p>Payload options:ElectroOptic camera, FLIR, Communications hub</p>
+			   <p>A Logitech webcam is be used for onboard machine vision to detect the various characteristics of the targets</p>
+			   <h3>Applications</h3>
+			   <p>Long range aerial photography/surveillance, package delivery, Remote information centre</p>
+
+            <span class="categories"><i class="icon-tag"></i>Branding, Web Design</span>
+		   </div>
+
+         <div class="link-box">
+            
+		      <a class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div><!-- modal-05 End -->
+
+	 
+			<div>
+                 <center><a href="brochure/SRM UAV Brochure.pdf" target="_blank"><button>Click <strong>Here</strong> To Download Our Brochure</button></a></center>
+                    
+            </div>
+
+				
+				 
+
+            
+			
+				
+
+     
+
+   </section> <!-- Portfolio End -->
+
+   <!-- Journal Section
+   ================================================== -->
+   <section id="journal">
+
+      <div class="row section-head">
+         <div class="col full">
+            <h2>Gallery</h2>
+		
+           
+         </div>
+
+ <div id="sliderFrame">
+        <div id="slider">
+           
+            <img src="images/gallery/1.jpg">
+            <img src="images/gallery/2.jpg">
+            <img src="images/gallery/3.jpg">
+            <img src="images/gallery/4.jpg">
+            
+            <img src="images/gallery/6.jpg">
+            <img src="images/gallery/7.jpg">
+
+        </div>
+
+
+      </div>
+
+      
+
+      </div> <!-- Blog Entries End -->
+
+   </section>  <!-- Journal Section End -->
+
+
+   
+
+   <!-- Map Section
+   ================================================== -->
+   <section id="map">
+
+
+
+   </section> <!-- Map Section End-->
+
+    <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+      <div class="row section-head">
+         <div class="col full">
+            <h2>Contact Us</h2>
+            <p class="desc">Get in touch with us, drop an E-Mail at <b>srmuavsuas@gmail.com</b></p>
+         </div>
+      </div>
+
+      <div class="row">
+
+         <div class="col g-7">
+
+            
+
+                  <div>
+                    <!-- <a href="http://goo.gl/forms/dlXARgYjWv" target="_blank"><button>Click Here to fill the Enquiry Form</button></a> -->
+                    <img src = "images/contact.png" width ="500">
+                    
+                  </div>
+
+				</fieldset>
+				</form>  <!-- Form End --> 
+
+            <!-- contact-warning -->
+            <div id="message-warning"></div>
+            <!-- contact-success -->
+				<div id="message-success">
+               <i class="icon-ok"></i>Your message was sent, thank you!<br />
+				</div>
+
+         </div>
+
+
+         <aside class="col g-5">
+
+            <h3>Contact Information</h3>
+
+            <p><strong>SRM Unmanned Aerial Vehicle</strong></p>
+
+            <p>
+            Directorate of Research<br/>
+	    SRM University<br/>
+	    Kattankulathur, Kancheepuram Dist.<br/>
+	    Tamil Nadu-603203<br/>
+            India
+            </p>
+
+            <p>
+            Phone: (+91) 77085-24382, (+91) 8056-295232 <br />
+            Email: contact@srmuav.com
+            </p><br />
+
+            <h3>Web Design</h3>
+
+            <p><a href="https://www.facebook.com/varunvn">Varun</a></p>
+            
+
+         </aside>
+
+      </div>
+
+   </section> <!-- Contact Section End-->
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="col g-7">
+            <ul class="copyright">
+               <li>&copy SRM Unmanned Aerial Vehicle</li><li>All Rights Reserved</li>
+               <li>Design by <a href="https://www.facebook.com/varunvn" title="Styleshout">Varun</a></li>
+            </ul>
+         </div>
+
+         <div class="col g-5 pull-right">
+            <ul class="social-links">
+               <li><a href="https://www.facebook.com/SrmUav/?fref=ts"><i class="icon-facebook"></i></a></li>
+               <li><a href="https://twitter.com/srm_uav"><i class="icon-twitter"></i></a></li>
+           
+            </ul>
+         </div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+<!-- Script ========================== -->
+
+
+   <!-- Java Script
+   ================================================== -->
+   <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+   <!--<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>-->
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/scrollspy.js"></script>
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/jquery.reveal.js"></script>
+   <!--<script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>-->
+   <script src="js/api.js" type="text/javascript"></script>
+   <script src="js/gmaps.js"></script>
+   <script src="js/init.js"></script>
+   <script src="js/smoothscrolling.js"></script>
+
+
+
+</body>
+
+</html>		
